@@ -1,0 +1,100 @@
+import pygame
+
+WINDOW_WIDTH = 1000				#some basic values, configurations, window size etc
+WINDOW_HEIGHT = 1000
+STARTING_POINT = (0,0)
+WINDOW = pygame.display.set_mode((WINDOW_WIDTH,WINDOW_HEIGHT))
+SCREEN = pygame.display.get_surface()
+BACKGROUND = pygame.image.load('snake_skin.jpg')
+SNAKES = [0,1,0]	
+LEVELS = [0,1,0]
+EASY_TIME = 0.08
+NORMAL_TIME = 0.06
+HARD_TIME = 0.04
+
+FIELD_SIDE = 30						#game etc
+BOARD_WIDTH = 20
+BOARD_HEIGHT = 15
+HEAD = 1
+PREY = 2
+POINTS = 10
+
+BLACK = (0,0,0)					#colours
+WHITE = (255,255,255)
+GREY = (50,50,50)
+
+X_1 = 300				#buttons and texts
+Y_1 = 100
+X_2 = 300
+Y_2 = 400
+X_3 = 300
+Y_3 = 700
+X_4 = 50
+Y_4 = 900
+X_5 = 500
+Y_5 = 100
+X_6 = 100
+Y_6 = 250
+X_7 = 395
+Y_7 = 250
+X_8 = 690
+Y_8 = 250
+X_9 = 500
+Y_9 = 500
+X_10 = 100
+Y_10 = 700
+X_11 = 395
+Y_11 = 700
+X_12 = 690
+Y_12 = 700
+X_13 = 350
+Y_13 = 815
+X_14 = 200
+Y_14 = 275
+X_15 = 500
+Y_15 = 800
+X_16 = 500
+Y_16 = 100
+X_17 = 200
+Y_17 = 200
+X_18 = 500
+Y_18 = 200
+X_19 = 800
+Y_19 = 200
+X_20 = 200
+Y_20 = 350
+X_21 = 500
+Y_21 = 100
+X_22 = 500
+Y_22 = 150
+D_X = 300
+D_Y = 50
+
+X_FRAME_1 = 10
+Y_FRAME_1 = 10
+X_FRAME_2 = 5
+Y_FRAME_2 = 5
+WIDTH_1 = 400
+HEIGHT_1 = 200
+WIDTH_2 = 100
+HEIGHT_2 = 50
+WIDTH_3 = 210
+HEIGHT_3 = 70
+WIDTH_4 = 300
+HEIGHT_4 = 150
+
+
+F1 = 100			#fonts
+F2 = 30
+F3 = 50
+F4 = 75
+F5 = 45
+
+S_B_G = pygame.image.load("snake_body_green.png")				#images
+S_B_G = pygame.transform.scale(S_B_G,(HEIGHT_3,HEIGHT_3))
+S_B_B = pygame.image.load("snake_body_blue.png")
+S_B_B = pygame.transform.scale(S_B_B,(HEIGHT_3,HEIGHT_3))
+S_B_R = pygame.image.load("snake_body_red.png")
+S_B_R = pygame.transform.scale(S_B_R,(HEIGHT_3,HEIGHT_3))
+PREY_IMAGE = pygame.image.load("prey.png")
+PREY_IMAGE = pygame.transform.scale(PREY_IMAGE,(FIELD_SIDE,FIELD_SIDE))
